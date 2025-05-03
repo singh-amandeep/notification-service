@@ -4,6 +4,7 @@ from app.services.email_service import send_email
 
 router = APIRouter()
 
+@router.post("/email")
 async def send_email_endpoint(
     to: Emailstr,
     subject: str,
